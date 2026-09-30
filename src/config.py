@@ -1,0 +1,1 @@
+MODEL="shadow_hand"
