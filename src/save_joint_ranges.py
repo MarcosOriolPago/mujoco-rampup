@@ -2,7 +2,7 @@ import json
 import mujoco_menagerie as mm
 from .config import MODEL
 
-model = mm.load('shadow_hand')
+model = mm.load(MODEL)
 
 data_to_save = {
     "joints": {},
@@ -31,7 +31,7 @@ for i in range(model.nu):
     else:
         data_to_save["actuators"][actuator_name] = {"min": "unlimited", "max": "unlimited"}
 
-# Guardar todo en el archivo JSON
+# Save everything to the JSON file
 with open("shadow_hand_specs.json", "w") as f:
     json.dump(data_to_save, f, indent=4)
 

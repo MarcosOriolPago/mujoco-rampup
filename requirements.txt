@@ -1,4 +1,11 @@
-opencv-python
+mujoco
 mujoco-menagerie
+mjviser
+numpy
+opencv-python
 fastapi
 uvicorn
+# tutorial notebook
+jupyterlab
+matplotlib
+pillow
